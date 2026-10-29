@@ -1,0 +1,25 @@
+[project]
+name = "finance-service-agent"
+version = "0.1.0"
+description = "FastAPI server for stock data and predictions with Agno"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "agno>=1.1.1",
+    "fastapi>=0.115.8",
+    "uvicorn>=0.34.0",
+    "finnhub-python>=2.4.22",
+    "yfinance",
+    "pandas>=2.2.3",
+    "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.27.0",
+    "pytest>=8.3.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

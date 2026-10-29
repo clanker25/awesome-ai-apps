@@ -1,0 +1,26 @@
+# env / secrets
+.env
+.env.local
+
+# python
+__pycache__/
+*.pyc
+backend/.venv/
+backend/data/
+
+# node
+frontend/node_modules/
+frontend/.next/
+frontend/.pnpm-store/
+.pnpm-store/
+
+# misc
+.DS_Store
+
+# build/tool caches
+frontend/.gstack/
+*.tsbuildinfo
+
+# repo-root .gitignore ignores lib/ (Python) — keep our Next.js API client
+!frontend/src/lib/
+!frontend/src/lib/**
